@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto – Dédalo Aviación</title>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo"><img src="../images/logo.png" alt="Dédalo Aviación"><span>Dédalo Aviación</span></a>
+      <nav class="main-nav" id="mainNav">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="about.html">Quiénes somos</a></li>
+          <li><a href="services.html">Servicios</a></li>
+          <li><a href="fleet.html">Nuestra flota</a></li>
+          <li><a href="contact.html" class="active">Contacto</a></li>
+        </ul>
+      </nav>
+      <div class="header-right">
+        <div class="lang-switcher">
+          <a href="../contact.html" class="lang">EN</a>
+          <span class="lang-sep">|</span>
+          <a href="contact.html" class="lang active">ES</a>
+        </div>
+        <button class="mobile-toggle" aria-label="Menú" onclick="document.getElementById('mainNav').classList.toggle('open')"><i class="fas fa-bars"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="hero-bg" style="background-image:url('../images/contact-hero.jpg')"></div>
+    <h1>Contáctenos</h1>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="info-item"><i class="fas fa-map-marker-alt"></i><div><strong>Dirección</strong><p>Aeródromo de Requena – Hangar 2, Autovía A-3, Km. 297, 46391 Requena, Valencia</p></div></div>
+          <div class="info-item"><i class="fas fa-phone"></i><div><strong>Teléfono</strong><p><a href="tel:+34960260924">+34 960 260 924</a></p></div></div>
+          <div class="info-item"><i class="fas fa-envelope"></i><div><strong>Correo electrónico</strong><p><a href="mailto:info@dedaloaviacion.com">info@dedaloaviacion.com</a></p></div></div>
+          <div class="info-item"><i class="fas fa-clock"></i><div><strong>Horario</strong><p>Lunes – Viernes: 08:00 – 18:00<br>Sábado – Domingo: Cerrado</p></div></div>
+          <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12400!2d-1.0833!3d39.4833!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd63d4e2bcf38f13%3A0x1!2sAer%C3%B3dromo+de+Requena!5e0!3m2!1ses!2ses!4v1700000000000" width="100%" height="300" style="border:0;border-radius:8px;" allowfullscreen loading="lazy"></iframe>
+          </div>
+        </div>
+        <div class="contact-form">
+          <h3>Envíenos un mensaje</h3>
+          <form action="#" method="POST" onsubmit="event.preventDefault();alert('¡Mensaje enviado! Nos pondremos en contacto pronto.');this.reset();">
+            <div class="form-group"><label for="name">Nombre</label><input type="text" id="name" name="name" placeholder="Su nombre" required></div>
+            <div class="form-group"><label for="email">Correo electrónico</label><input type="email" id="email" name="email" placeholder="Su correo" required></div>
+            <div class="form-group"><label for="phone">Teléfono (opcional)</label><input type="text" id="phone" name="phone" placeholder="Su número de teléfono"></div>
+            <div class="form-group"><label for="subject">Asunto</label><input type="text" id="subject" name="subject" placeholder="Asunto" required></div>
+            <div class="form-group"><label for="message">Mensaje</label><textarea id="message" name="message" rows="5" placeholder="Su mensaje" required></textarea></div>
+            <div class="form-group form-privacy"><label><input type="checkbox" required> Acepto la <a href="#">Política de Privacidad</a> y consiento el tratamiento de mis datos.</label></div>
+            <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+          </form>
+          <p class="privacy-note">Responsable: Dédalo Aviación S.L. Finalidad: Responder a su consulta. Puede ejercer sus derechos de acceso, rectificación, supresión y demás derechos detallados en la Política de Privacidad.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; 2025 Dédalo Aviación S.L. Todos los derechos reservados.</p>
+      <div class="footer-links"><a href="#">Política de Privacidad</a><a href="#">Aviso Legal</a></div>
+    </div>
+  </footer>
+
+</body>
+</html>
