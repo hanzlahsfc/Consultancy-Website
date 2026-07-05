@@ -41,12 +41,14 @@ section { scroll-margin-top: 70px; }
 .page-hero h1 { position: relative; z-index: 2; color: #fff; font-size: 48px; font-weight: 700; }
 
 /* ========== HOME HERO ========== */
-.hero { position: relative; min-height: 100vh; display: flex; align-items: center; justify-content: center; text-align: center; overflow: hidden; margin-top: 70px; }
-.hero-bg { position: absolute; inset: 0; background: url('images/hero-bg.jpg') center/cover no-repeat; }
-.hero-overlay { position: absolute; inset: 0; background: linear-gradient(135deg, rgba(12,27,51,.82), rgba(26,58,107,.75)); }
-.hero-content { position: relative; z-index: 2; max-width: 750px; padding: 0 20px; }
+.hero { position: relative; height: 500px; min-height: 500px; display: flex; align-items: flex-end; justify-content: flex-start; overflow: hidden; margin-top: 70px; margin-bottom: 80px; }
+.hero-bg { position: absolute; inset: 0; background: #0C1B33 url('images/hero-bg.png') center/contain no-repeat; }
+.hero-overlay { display: none; }
+.hero-content { position: relative; z-index: 2; padding: 0 0 20px 220px; }
 .hero-badge { display: inline-block; font-family: 'Montserrat', sans-serif; font-size: 13px; font-weight: 700; color: #fff; background: rgba(255,255,255,.15); border: 1px solid rgba(255,255,255,.3); padding: 6px 18px; border-radius: 20px; letter-spacing: 1px; margin-bottom: 20px; text-transform: uppercase; }
-.hero h1 { font-size: 58px; font-weight: 700; color: #fff; margin-bottom: 24px; letter-spacing: 1px; }
+.hero h1 { font-size: 58px; font-weight: 700; color: #fff; margin-bottom: 10px; letter-spacing: 2px; }
+.hero-subtitle { font-size: 15px; font-weight: 600; color: rgba(255,255,255,.65); letter-spacing: 5px; text-transform: uppercase; margin-bottom: 24px; }
+.hero-services { font-size: 16px; color: rgba(255,255,255,.85); line-height: 1.7; margin-bottom: 36px; }
 .hero p { font-size: 18px; color: rgba(255,255,255,.85); line-height: 1.8; margin-bottom: 36px; }
 
 /* ========== SECTION COMMON ========== */
@@ -59,8 +61,8 @@ section { scroll-margin-top: 70px; }
 .section-dark .section-subtitle { color: rgba(255,255,255,.7); }
 
 /* ========== ABOUT (home preview) ========== */
-.about-preview { text-align: center; }
-.about-preview p { font-size: 17px; color: #555; line-height: 1.9; max-width: 750px; margin: 0 auto 40px; }
+.about-preview { text-align: center; max-width: 850px; margin: 0 auto; }
+.about-preview p { font-size: 17px; color: #555; line-height: 1.9; margin-bottom: 40px; }
 
 /* ========== ABOUT PAGE ========== */
 .about-content { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: center; margin-bottom: 60px; }
@@ -83,11 +85,12 @@ section { scroll-margin-top: 70px; }
 .service-card p { font-size: 14px; color: #666; line-height: 1.7; }
 
 /* ========== SERVICES PAGE - detailed ========== */
-.service-detail { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: center; padding: 60px 0; border-bottom: 1px solid #eee; }
+.service-detail { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: center; padding: 60px 0; border-bottom: 1px solid #eee; min-height: 350px; }
 .service-detail:nth-child(even) { direction: rtl; }
 .service-detail:nth-child(even) > * { direction: ltr; }
 .service-detail:last-child { border-bottom: none; }
-.service-detail-img { border-radius: 10px; overflow: hidden; }
+.service-detail-img { border-radius: 10px; overflow: hidden; background: #f0f2f5; }
+.service-detail-img img { width: 100%; height: 100%; object-fit: cover; display: block; }
 .service-detail-text h3 { font-size: 26px; margin-bottom: 16px; }
 .service-detail-text p { font-size: 15px; color: #555; line-height: 1.8; margin-bottom: 12px; }
 .service-detail-text ul { margin: 12px 0; padding-left: 20px; }
@@ -95,40 +98,26 @@ section { scroll-margin-top: 70px; }
 
 /* ========== SERVICE CENTER ========== */
 .section-service-center { padding: 60px 0; background: #fff; }
-.service-center-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; align-items: center; max-width: 700px; margin: 0 auto; }
-.service-center-item { display: flex; align-items: center; justify-content: center; padding: 20px; }
-.service-center-item img { max-height: 80px; width: auto; object-fit: contain; filter: grayscale(100%); opacity: .5; transition: all .3s; }
+.service-center-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 50px; align-items: center; max-width: 900px; margin: 0 auto; }
+.service-center-item { display: flex; align-items: center; justify-content: center; padding: 30px; }
+.service-center-item img { max-height: 100px; width: auto; object-fit: contain; filter: grayscale(100%); opacity: .5; transition: all .3s; }
 .service-center-item:hover img { filter: grayscale(0%); opacity: 1; }
 
 /* ========== FULL-WIDTH IMAGE ========== */
 .fullwidth-image { position: relative; height: 400px; overflow: hidden; }
 .fullwidth-image-bg { position: absolute; inset: 0; background-size: cover; background-position: center; }
 
-/* ========== BRANDS ========== */
-.brands-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 30px; align-items: center; }
-.brand-item { display: flex; flex-direction: column; align-items: center; gap: 10px; padding: 24px 16px; border-radius: 8px; background: #fff; box-shadow: 0 2px 10px rgba(0,0,0,.04); transition: transform .3s, box-shadow .3s; }
-.brand-item:hover { transform: scale(1.05); box-shadow: 0 4px 20px rgba(0,0,0,.08); }
-.brand-item img { height: 60px; width: auto; object-fit: contain; filter: grayscale(100%); opacity: .5; transition: all .3s; }
-.brand-item:hover img { filter: grayscale(0%); opacity: 1; }
-.brand-item span { font-family: 'Montserrat', sans-serif; font-size: 12px; font-weight: 600; color: #888; text-transform: uppercase; letter-spacing: .5px; margin-top: 4px; }
-
 /* ========== FLEET PAGE - aircraft cards ========== */
 .fleet-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 30px; }
 .aircraft-card { background: #fff; border-radius: 10px; overflow: hidden; box-shadow: 0 2px 15px rgba(0,0,0,.06); transition: transform .3s; }
 .aircraft-card:hover { transform: translateY(-4px); }
-.aircraft-card-img { height: 220px; background: linear-gradient(135deg, #1A3A6B, #0C1B33); display: flex; align-items: center; justify-content: center; color: rgba(255,255,255,.3); font-size: 13px; font-family: 'Montserrat', sans-serif; }
-.aircraft-card-img img { width: 100%; height: 100%; object-fit: cover; }
+.aircraft-card-img { height: 220px; background: #f0f2f5; display: flex; align-items: center; justify-content: center; overflow: hidden; }
+.aircraft-card-img img { width: 100%; height: 100%; object-fit: contain; padding: 10px; }
 .aircraft-card-body { padding: 24px; }
 .aircraft-card-body h4 { font-size: 18px; font-weight: 700; margin-bottom: 14px; }
 .aircraft-specs { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
 .spec-item { font-size: 13px; color: #555; }
 .spec-item strong { color: #0C1B33; }
-
-/* ========== CERTIFICATIONS ========== */
-.certs-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; }
-.cert-card-img { display: flex; flex-direction: column; align-items: center; background: #fff; padding: 20px; border-radius: 10px; box-shadow: 0 2px 15px rgba(0,0,0,.06); transition: transform .3s, box-shadow .3s; overflow: hidden; }
-.cert-card-img:hover { transform: translateY(-5px); box-shadow: 0 8px 30px rgba(0,0,0,.1); }
-.cert-card-img img { width: 100%; height: auto; border-radius: 6px; display: block; }
 
 /* ========== CONTACT ========== */
 .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: start; }
@@ -151,23 +140,23 @@ section { scroll-margin-top: 70px; }
 
 /* ========== FOOTER ========== */
 .site-footer { background: #0C1B33; padding: 28px 0; }
-.footer-inner { display: flex; align-items: center; justify-content: center; gap: 8px; flex-wrap: wrap; }
-.site-footer p { font-size: 13px; color: #888; }
-.site-footer p a { color: #888; transition: color .3s; }
-.site-footer p a:hover { color: #fff; }
-.footer-brand { font-family: 'Montserrat', sans-serif; font-weight: 700; color: #fff; font-size: 13px; }
+.footer-inner { display: flex; align-items: center; justify-content: center; gap: 12px; flex-wrap: wrap; }
+.site-footer p { font-size: 13px; color: #888; margin: 0; }
+.site-footer a { color: #888; transition: color .3s; }
+.site-footer a:hover { color: #fff; }
+.footer-brand { font-family: 'Montserrat', sans-serif; font-weight: 700; color: #fff; font-size: 14px; letter-spacing: .5px; }
 
 /* ========== RESPONSIVE ========== */
 @media (max-width: 992px) {
   .services-grid { grid-template-columns: repeat(2, 1fr); }
-  .brands-grid { grid-template-columns: repeat(3, 1fr); }
   .contact-grid, .about-content, .service-detail { grid-template-columns: 1fr; }
   .service-detail:nth-child(even) { direction: ltr; }
   .hero h1 { font-size: 44px; }
+  .hero-subtitle { font-size: 13px; letter-spacing: 4px; }
+  .hero-services { font-size: 14px; }
   .stats-row { grid-template-columns: repeat(2, 1fr); }
   .fleet-grid { grid-template-columns: 1fr; }
   .service-center-grid { grid-template-columns: repeat(3, 1fr); gap: 20px; }
-  .certs-grid { grid-template-columns: repeat(2, 1fr); }
   .fullwidth-image { height: 280px; }
 }
 @media (max-width: 768px) {
@@ -176,16 +165,16 @@ section { scroll-margin-top: 70px; }
   .main-nav ul { flex-direction: column; gap: 0; }
   .main-nav a { display: block; padding: 12px 0; border-bottom: 1px solid #f0f0f0; }
   .mobile-toggle { display: block; }
-  .hero { min-height: 80vh; }
+  .hero { height: 350px; min-height: 350px; }
   .hero h1 { font-size: 34px; }
   .hero p { font-size: 16px; }
+  .hero-subtitle { font-size: 12px; letter-spacing: 3px; }
+  .hero-services { font-size: 13px; }
   .page-hero { height: 250px; }
   .page-hero h1 { font-size: 34px; }
   .services-grid { grid-template-columns: 1fr; }
-  .certs-grid { grid-template-columns: 1fr; }
-  .brands-grid { grid-template-columns: repeat(3, 1fr); gap: 16px; }
-  .section-title { font-size: 28px; }
   .section { padding: 60px 0; }
+  .section-title { font-size: 28px; }
   .container { padding: 0 20px; }
   .footer-inner { flex-direction: column; gap: 12px; text-align: center; }
   .service-center-grid { grid-template-columns: 1fr; gap: 16px; }
@@ -193,7 +182,9 @@ section { scroll-margin-top: 70px; }
   .hero-badge { font-size: 11px; padding: 4px 14px; }
 }
 @media (max-width: 480px) {
-  .brands-grid { grid-template-columns: repeat(2, 1fr); }
+  .hero { height: 300px; min-height: 300px; }
   .hero h1 { font-size: 28px; }
+  .hero-subtitle { font-size: 11px; letter-spacing: 2px; }
+  .hero-services { font-size: 12px; }
   .stats-row { grid-template-columns: 1fr; }
 }
