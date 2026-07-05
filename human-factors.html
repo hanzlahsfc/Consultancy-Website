@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Human Factors Training – Vortex Tech</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo"><img src="images/logo.png" alt="Vortex Tech"><span>Vortex <span style="color:#54a8cc">Tech</span></span></a>
+      <nav class="main-nav" id="mainNav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="human-factors.html" class="active">Human Factors</a></li>
+          <li><a href="fleet.html">Our fleet</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-right">
+        <div class="lang-switcher">
+          <a href="human-factors.html" class="lang active">EN</a>
+          <span class="lang-sep">|</span>
+          <a href="es/human-factors.html" class="lang">ES</a>
+        </div>
+        <button class="mobile-toggle" aria-label="Menu" onclick="document.getElementById('mainNav').classList.toggle('open')"><i class="fas fa-bars"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="hero-bg" style="background-image:url('images/services/inspection.jpg')"></div>
+    <h1>Human Factors Training</h1>
+  </section>
+
+  <!-- INSTRUCTOR SECTION -->
+  <section class="section">
+    <div class="container">
+      <div class="about-content">
+        <div class="about-text">
+          <h3>Meet Your Instructor: Amanullah Qureshi</h3>
+          <p><strong>Aviation Management Consultant | EAAP Human Factors Specialist | ISO Lead Auditor | PhD Finalist (UOC, Spain)</strong></p>
+          <p>Our specialized Human Factors (HF) and Safety Management Systems (SMS) training programs are personally designed, updated, and delivered by Amanullah Qureshi who brings a unique, triple-tier authority to European aviation compliance:</p>
+          <ul style="margin:16px 0;padding-left:20px;">
+            <li style="list-style:disc;margin-bottom:8px;font-size:15px;color:#555;line-height:1.7;"><strong>Technical Mastery:</strong> Decades of operational aircraft maintenance engineering management and instructional delivery at the Pakistan International Airlines (PIA) training center.</li>
+            <li style="list-style:disc;margin-bottom:8px;font-size:15px;color:#555;line-height:1.7;"><strong>Academic Authority:</strong> PhD Finalist in Business Management at the Universitat Oberta de Catalunya (UOC, Spain), specializing in organizational strategy and performance.</li>
+            <li style="list-style:disc;margin-bottom:8px;font-size:15px;color:#555;line-height:1.7;"><strong>Vetted Compliance Credentials:</strong> Certified ISO Lead Auditor and an active professional member of both the European Association for Aviation Psychology (EAAP) and the German Aviation Research Society (GARS).</li>
+          </ul>
+        </div>
+        <div class="about-img" style="display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#1A3A6B,#0C1B33);min-height:350px;border-radius:10px;color:rgba(255,255,255,.4);font-size:14px;font-family:'Montserrat',sans-serif;text-align:center;padding:20px;">
+          <div>[ PLACEHOLDER: Drop Amanullah Qureshi's LinkedIn Headshot Here ]<br>Suggested Dimensions: 400x400px, Professional Clean Background</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRAINING SOLUTIONS -->
+  <section class="section section-gray">
+    <div class="container">
+      <h2 class="section-title">Our Training Solutions</h2>
+      <p class="section-subtitle">We design and deliver courses tailored strictly to EASA Part-145.A.30(e) and Part-66 Module 9 standards.</p>
+      <div class="services-grid" style="grid-template-columns:1fr 1fr;">
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-laptop"></i></div>
+          <h4>Self-Paced E-Learning</h4>
+          <p>Flexible online courses you can complete at your own pace, fully mapped to an EASA Compliance Matrix for instant approval by your company's Quality Manager.</p>
+          <a href="#" class="btn btn-primary" style="margin-top:20px;" onclick="event.preventDefault();alert('Course link coming soon. Contact us for details.');">Access Self-Paced Course</a>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-users"></i></div>
+          <h4>Live Corporate Webinar</h4>
+          <p>Interactive live online masterclasses delivered directly by Amanullah Qureshi. Focused on minimizing human error and establishing a healthy "Just Culture" in your organization.</p>
+          <a href="contact.html" class="btn btn-primary" style="margin-top:20px;">Request Live Webinar</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section section-dark">
+    <div class="container" style="text-align:center;">
+      <h2 class="section-title" style="color:#fff;">Enhance your team's safety culture</h2>
+      <p class="section-subtitle">Contact us to discuss your Human Factors training needs and EASA compliance requirements.</p>
+      <a href="contact.html" class="btn btn-white">Get in touch</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; 2026 <a href="https://wa.me/34678103329" target="_blank">Hanzlah</a></p>
+      <span class="footer-brand">Voltex Tech</span>
+    </div>
+  </footer>
+
+</body>
+</html>
