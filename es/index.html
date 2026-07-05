@@ -14,12 +14,13 @@
 
   <header class="site-header">
     <div class="header-inner">
-      <a href="index.html" class="logo"><span>Voltex Tech</span></a>
+      <a href="index.html" class="logo"><img src="../images/logo.png" alt="Vortex Tech"><span>Vortex <span style="color:#54a8cc">Tech</span></span></a>
       <nav class="main-nav" id="mainNav">
         <ul>
           <li><a href="index.html" class="active">Inicio</a></li>
           <li><a href="about.html">Quiénes somos</a></li>
           <li><a href="services.html">Servicios</a></li>
+          <li><a href="human-factors.html">Factores Humanos</a></li>
           <li><a href="fleet.html">Nuestra flota</a></li>
           <li><a href="contact.html">Contacto</a></li>
         </ul>
@@ -43,15 +44,41 @@
     </div>
   </section>
 
-  <section class="fullwidth-image">
-    <div class="fullwidth-image-bg" style="background-image:url('../images/full-width-bg.jpg')"></div>
-  </section>
-
   <section class="section">
     <div class="container about-preview">
       <h2 class="section-title">Quiénes somos</h2>
-      <p>VORTEX TECH es una firma de consultoría y servicios de flota especializada en aeronaves ligeras (≤2730kg). Ofrecemos asesoramiento experto en Cumplimiento de Aeronavegabilidad, Gestión de Datos y Consultoría Regulatoria para mantener su flota segura y conforme a las normativas.</p>
+      <p>En Vortex Tech somos una Organización Combinada de Aeronavegabilidad (CAO) de primer nivel especializada en Gestión de Aeronavegabilidad Continua (CAM) y Revisiones de Aeronavegabilidad (ARC) en toda Europa. Nos especializamos en la gestión integral de aeronavegabilidad de aeronaves ligeras (MTOW inferior a 2.730 kg), helicópteros hasta 1.200 kg, planeadores, globos y dirigibles bajo las normas EASA Part-ML.</p>
       <a href="about.html" class="btn btn-outline">Más sobre nosotros</a>
+    </div>
+  </section>
+
+  <!-- SERVICES PREVIEW -->
+  <section class="section section-gray">
+    <div class="container">
+      <h2 class="section-title">Nuestros Servicios</h2>
+      <p class="section-subtitle">Ofrecemos una gama completa de servicios aeronáuticos para mantener su aeronave segura, conforme y operativa.</p>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-clipboard-check"></i></div>
+          <h4>Gestión de Aeronavegabilidad Continua</h4>
+          <p>CAM integral para aeronaves ligeras, helicópteros, planeadores, globos y dirigibles bajo marcos EASA.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-certificate"></i></div>
+          <h4>Emisión y Renovación de ARC</h4>
+          <p>Procesos completos de certificado de revisión incluyendo emisión y extensión del Formulario EASA 15c.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-search"></i></div>
+          <h4>Auditoría e Inspección Preventa</h4>
+          <p>Auditoría preventiva con marcos EASA e ISO, más inspecciones preventa exhaustivas.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-plane"></i></div>
+          <h4>Arrendamiento de Aeronaves</h4>
+          <p>Opciones de arrendamiento en seco incluyendo acumulación de horas rentable para pilotos.</p>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -60,9 +87,9 @@
       <h2 class="section-title">Contáctenos</h2>
       <div class="contact-grid">
         <div class="contact-info">
-          <div class="info-item"><i class="fas fa-map-marker-alt"></i><div><strong>Dirección</strong><p>Aeródromo de Requena – Hangar 2, Autovía A-3, Km. 297, 46391 Requena, Valencia</p></div></div>
-          <div class="info-item"><i class="fas fa-phone"></i><div><strong>Teléfono</strong><p><a href="tel:+34960260924">+34 960 260 924</a></p></div></div>
-          <div class="info-item"><i class="fas fa-envelope"></i><div><strong>Correo</strong><p><a href="mailto:info@voltextech.com">info@voltextech.com</a></p></div></div>
+          <div class="info-item"><i class="fas fa-map-marker-alt"></i><div><strong>Dirección</strong><p>Pendiente</p></div></div>
+          <div class="info-item"><i class="fas fa-phone"></i><div><strong>Teléfono</strong><p><a href="tel:+34678103329">+34 678 103 329</a></p></div></div>
+          <div class="info-item"><i class="fas fa-envelope"></i><div><strong>Correo</strong><p><a href="mailto:Info@vortextech.es">Info@vortextech.es</a></p></div></div>
           <div class="map-container"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12400!2d-1.0833!3d39.4833!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd63d4e2bcf38f13%3A0x1!2sAer%C3%B3dromo+de+Requena!5e0!3m2!1ses!2ses!4v1700000000000" width="100%" height="250" style="border:0;border-radius:8px;" allowfullscreen loading="lazy"></iframe></div>
         </div>
         <div class="contact-form">
@@ -70,6 +97,7 @@
           <form action="#" method="POST" onsubmit="event.preventDefault();alert('¡Mensaje enviado! Nos pondremos en contacto pronto.');this.reset();">
             <div class="form-group"><label for="name">Nombre</label><input type="text" id="name" name="name" placeholder="Su nombre" required></div>
             <div class="form-group"><label for="email">Correo electrónico</label><input type="email" id="email" name="email" placeholder="Su correo" required></div>
+            <div class="form-group"><label for="phone">Teléfono</label><input type="text" id="phone" name="phone" placeholder="Su número de teléfono"></div>
             <div class="form-group"><label for="message">Mensaje</label><textarea id="message" name="message" rows="5" placeholder="Su mensaje" required></textarea></div>
             
             <button type="submit" class="btn btn-primary">Enviar mensaje</button>
