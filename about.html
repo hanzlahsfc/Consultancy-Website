@@ -10,7 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
-<body>
+<body style="overflow:hidden;height:100vh;">
 
   <!-- HEADER -->
   <header class="site-header">
@@ -21,9 +21,8 @@
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html" class="active">About us</a></li>
           <li><a href="services.html">Services</a></li>
-          <li><a href="human-factors.html">Human Factors</a></li>
-          <li><a href="fleet.html">Our fleet</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="fleet.html">Fleet</a></li><li><a href="human-factors.html">Human Factors Training</a></li>
+          <li><a href="contact.html">Contact us</a></li>
         </ul>
       </nav>
       <div class="header-right">
@@ -37,55 +36,25 @@
     </div>
   </header>
 
-  <!-- PAGE HERO -->
-  <section class="page-hero">
-    <div class="hero-bg" style="background-image:url('images/about-hero.jpg')"></div>
-    <h1>About us</h1>
-  </section>
-
-  <!-- ABOUT CONTENT -->
-  <section class="section">
+  <!-- ABOUT PREVIEW FROM HOME (PRIMARY) -->
+  <section class="section" style="background:#0C1B33;">
     <div class="container">
-      <div class="about-content">
-        <div class="about-text">
-          <h3>Who we are</h3>
-          <p>We at Vortex Tech are a premier Combined Airworthiness Organization (CAO) specializing in Continuing Airworthiness Management (CAM) and Airworthiness Reviews (ARC) across Europe. Our organization is structured to deliver exceptionally agile, comprehensive digital compliance solutions.</p>
-          <p>We specialize in the end-to-end Airworthiness Management of light aircraft (MTOW under 2,730 kg), helicopters up to 1,200 kg, gliders, balloons, and airships under EASA Part-ML rules. Our mission is to translate high-level aviation safety theory into profitable, audit-proof operational reality.</p>
-          <p>By merging technical engineering legacy with advanced quality auditing and operational data, Vortex Tech delivers high-utility consulting, fleet management, and structural safety solutions. We operate with total geographic flexibility across Europe, seamlessly coordinating with your existing facilities or leveraging our deep network to help you source optimal hangar space whenever physical maintenance is required.</p>
+      <div class="about-content" style="align-items:start;">
+        <div class="about-text" style="text-align:justify;">
+          <h2 class="section-title" style="font-size:42px;color:#fff;margin-top:0;margin-bottom:12px;text-align:center;">About Us</h2>
+          <div style="margin-top:30px;"><p style="color:rgba(255,255,255,.9);">We at Vortex Tech are a premier Combined Airworthiness Organization (CAO) specializing in Continuing Airworthiness Management (CAM) and Airworthiness Reviews (ARC) across Europe. Our organization is structured to deliver exceptionally agile, comprehensive digital compliance solutions.</p>
+          <p style="color:rgba(255,255,255,.9);">We specialize in the end-to-end Airworthiness Management of light aircraft (MTOW under 2,730 kg), helicopters up to 1,200 kg, gliders, balloons, and airships under EASA Part-ML rules. Our mission is to translate high-level aviation safety theory into profitable, audit-proof operational reality.</p>
+          <p style="color:rgba(255,255,255,.9);">By merging technical engineering legacy with advanced quality auditing and operational data, Vortex Tech delivers high-utility consulting, fleet management, and structural safety solutions. We operate with total geographic flexibility across Europe, seamlessly coordinating with your existing facilities or leveraging our deep network to help you source optimal hangar space whenever physical maintenance is required.</p>
+          <p style="color:rgba(255,255,255,.9);">Backed by our professional membership in the German Aviation Research Society (GARS), we deliver high-level technical consulting and academic-grade corporate strategies that align your fleet management with cutting-edge aviation economic and safety research. Our team also holds active membership in the European Association of Aviation Psychology (EAAP), enabling us to deliver tailored human factors programs that enhance safety and minimize human error.</p>
         </div>
-        <div class="about-img"><img src="images/about-company.jpg" alt="Voltex Tech facilities"></div>
-      </div>
-
-      <!-- STATS -->
-      <div class="stats-row">
-        <div class="stat-item"><h3>750</h3><p>m² Facilities</p></div>
-        <div class="stat-item"><h3>15+</h3><p>Years Experience</p></div>
-        <div class="stat-item"><h3>200+</h3><p>Aircraft Serviced</p></div>
-        <div class="stat-item"><h3>3</h3><p>CAO Approvals</p></div>
-      </div>
-
-      <div class="about-content">
-        <div class="about-img"><img src="images/hangar.jpg" alt="Voltex Tech hangar"></div>
-        <div class="about-text">
-          <h3>Our Expertise & Memberships</h3>
-          <p>Backed by our professional membership in the German Aviation Research Society (GARS), we deliver high-level specialized operations and academic-grade technical consulting to ensure your fleet remains safe, optimized, and aligned with cutting-edge aviation economic and safety research.</p>
-          <p>Our team holds active membership in the European Association of Aviation Psychology (EAAP), enabling us to deliver tailored human factors programs that enhance safety, improve team communication, and minimize human error in technical maintenance operations. We are available across the continent to inspect your aircraft and optimize your operations.</p>
         </div>
+        <div class="about-img"><img src="images/about-latest.png" alt="About Vortex Tech" style="border-radius:16px;"></div>
       </div>
-    </div>
-  </section>
-
-  <!-- CTA -->
-  <section class="section section-dark">
-    <div class="container" style="text-align:center;">
-      <h2 class="section-title" style="color:#fff;">Ready to work with us?</h2>
-      <p class="section-subtitle">Get in touch to discuss your airworthiness management, auditing, consulting, or training needs.</p>
-      <a href="contact.html" class="btn btn-white">Contact us</a>
     </div>
   </section>
 
   <!-- FOOTER -->
-  <footer class="site-footer">
+  <footer class="site-footer" style="display:none;">
     <div class="container footer-inner">
       <p class="footer-left">&copy; <a href="https://wa.me/34678103329" target="_blank" class="footer-link">Hanzlah</a> 2026</p>
       <span class="footer-brand">Vortex Tech</span>
