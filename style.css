@@ -123,10 +123,10 @@ section { scroll-margin-top: 70px; }
 .spec-item strong { color: #0C1B33; }
 
 /* ========== CONTACT ========== */
-.contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: start; }
+.contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; }
 .info-item { display: flex; gap: 16px; margin-bottom: 24px; }
 .info-item i { font-size: 20px; color: #1A3A6B; margin-top: 4px; flex-shrink: 0; }
-.info-item strong { display: block; font-family: 'Montserrat', sans-serif; font-size: 14px; font-weight: 600; margin-bottom: 4px; color: #0C1B33; }
+.info-item strong { display: block; font-family: 'Montserrat', sans-serif; font-size: 22px; font-weight: 600; margin-bottom: 4px; color: #0C1B33; }
 .info-item p { font-size: 14px; color: #555; line-height: 1.6; }
 .info-item a { color: #1A3A6B; }
 .info-item a:hover { color: #15305A; }

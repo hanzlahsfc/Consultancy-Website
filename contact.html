@@ -38,7 +38,7 @@
 
   <section class="section-gray" style="padding-top:90px;">
     <div class="container">
-      <h1 style="color:#5fadcf;font-size:36px;font-weight:700;text-align:center;margin-bottom:30px;">Contact us</h1>
+      <h1 style="color:#5fadcf;font-size:36px;font-weight:700;text-align:center;margin-bottom:10px;">Contact us</h1>
     </div>
   </section>
 
@@ -46,7 +46,7 @@
   <section class="section section-gray">
     <div class="container">
       <div class="contact-grid">
-        <div class="contact-info">
+        <div class="contact-info" style="display:flex;flex-direction:column;padding-bottom:20px;">
           <div class="info-item">
             <i class="fas fa-map-marker-alt"></i>
             <div><strong>Address</strong><p>Carrer Arxiduc Lluís Salvador, 7, Nord, 07004 Palma, Illes Balears, Spain</p></div>
@@ -59,16 +59,18 @@
             <i class="fas fa-envelope"></i>
             <div><strong>Email</strong><p><a href="mailto:Info@vortextech.es">Info@vortextech.es</a></p></div>
           </div>
-          <div class="info-item">
-            <i class="fas fa-globe"></i>
-            <div><strong>Website</strong><p><a href="https://vortextech.es" target="_blank">vortextech.es</a></p></div>
-          </div>
+
           <div class="info-item">
             <i class="fas fa-clock"></i>
             <div><strong>Working Hours</strong><p>Open 24 Hours (Monday – Sunday)</p></div>
           </div>
           <div class="map-container">
             <iframe src="https://www.google.com/maps?q=Carrer+Arxiduc+Llu%C3%ADs+Salvador+7+Palma+Spain&output=embed" width="100%" height="300" style="border:0;border-radius:8px;" allowfullscreen loading="lazy"></iframe>
+          </div>
+          <div style="background:#1A3A6B;color:#fff;padding:30px;border-radius:10px;text-align:center;margin-top:auto;margin-bottom:0;">
+            <i class="fas fa-phone" style="font-size:28px;margin-bottom:10px;"></i>
+            <h3 style="color:#fff;margin-bottom:6px;font-size:20px;">Call us directly</h3>
+            <a href="tel:+34678103329" style="color:#fff;font-size:32px;font-weight:700;font-family:'Montserrat',sans-serif;text-decoration:none;">+34 678 103 329</a>
           </div>
         </div>
         <div class="contact-form">
@@ -88,13 +90,7 @@
             <div class="form-group"><label for="subject">Subject</label><input type="text" id="subject" name="subject" placeholder="Subject" required></div>
             <div class="form-group"><label for="message">Message</label><textarea id="message" name="message" rows="5" placeholder="Your message" required></textarea></div>
             
-            <div style="display:flex;gap:16px;align-items:stretch;">
-              <button type="submit" class="btn btn-primary" style="flex:1;">Send Message</button>
-              <div style="flex:1;background:#1A3A6B;color:#fff;border-radius:4px;text-align:center;display:flex;flex-direction:column;justify-content:center;padding:14px 20px;">
-                <span style="font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:.5px;margin-bottom:4px;">Call us directly</span>
-                <a href="tel:+34678103329" style="color:#fff;font-size:18px;font-weight:700;text-decoration:none;">+34 678 103 329</a>
-              </div>
-            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
           </form>
           
         </div>
