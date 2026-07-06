@@ -160,7 +160,9 @@ section { scroll-margin-top: 70px; }
   .service-center-grid { grid-template-columns: repeat(3, 1fr); gap: 20px; }
   .fullwidth-image { height: 280px; }
 }
+.services-grid-2col { grid-template-columns: repeat(2, 1fr); }
 @media (max-width: 768px) {
+  .services-grid-2col { grid-template-columns: 1fr; }
   .main-nav { display: none; position: absolute; top: 70px; left: 0; width: 100%; background: #fff; box-shadow: 0 4px 15px rgba(0,0,0,.1); padding: 20px; z-index: 999; }
   .main-nav.open { display: block; }
   .main-nav ul { flex-direction: column; gap: 0; }
