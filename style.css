@@ -142,11 +142,12 @@ section { scroll-margin-top: 70px; }
 
 /* ========== FOOTER ========== */
 .site-footer { background: #0C1B33; padding: 28px 0; }
-.footer-inner { display: flex; align-items: center; justify-content: center; gap: 12px; flex-wrap: wrap; }
+.footer-inner { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
 .site-footer p { font-size: 13px; color: #888; margin: 0; }
-.site-footer a { color: #888; transition: color .3s; }
-.site-footer a:hover { color: #fff; }
-.footer-brand { font-family: 'Montserrat', sans-serif; font-weight: 700; color: #fff; font-size: 14px; letter-spacing: .5px; }
+.footer-link { color: #fff; transition: color .3s; }
+.footer-link:hover { color: #54a8cc; }
+.footer-left, .footer-right { font-size: 13px; color: #888; }
+.footer-brand { font-family: 'Montserrat', sans-serif; font-weight: 700; color: #fff; font-size: 13px; letter-spacing: .5px; }
 
 /* ========== RESPONSIVE ========== */
 @media (max-width: 992px) {
