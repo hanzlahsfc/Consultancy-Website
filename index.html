@@ -22,6 +22,16 @@
     .hero-home h1 span { color:#54a8cc; }
     .hero-home .hero-tagline { font-size:16px; font-weight:400; color:rgba(255,255,255,.7); margin-bottom:6px; letter-spacing:3px; text-transform:uppercase; }
     .hero-home p { font-size:15px; color:rgba(255,255,255,.75); line-height:1.7; margin-bottom:28px; max-width:540px; }
+    @media (max-width:768px) {
+      .hero-home { height:50vh; min-height:360px; }
+      .hero-home h1 { font-size:34px; }
+      .hero-home .hero-tagline { font-size:13px; letter-spacing:2px; }
+      .hero-home p { font-size:14px; }
+    }
+    @media (max-width:480px) {
+      .hero-home { height:45vh; min-height:300px; }
+      .hero-home h1 { font-size:28px; }
+    }
   </style>
 </head>
 <body>
