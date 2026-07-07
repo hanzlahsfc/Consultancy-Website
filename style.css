@@ -20,7 +20,7 @@ section { scroll-margin-top: 70px; }
 .btn-white:hover { background: #f0f0f0; }
 
 /* ========== HEADER ========== */
-.site-header { position: fixed; top: 0; left: 0; width: 100%; z-index: 1000; background: #F5F6FA; box-shadow: 0 2px 10px rgba(0,0,0,.08); }
+.site-header { position: fixed; top: 0; left: 0; width: 100%; z-index: 1000; background: #fff; box-shadow: 0 2px 10px rgba(0,0,0,.08); }
 .header-inner { width: 100%; padding: 0 20px; display: flex; align-items: center; justify-content: space-between; height: 70px; }
 .logo { display: flex; align-items: center; gap: 10px; font-family: 'Montserrat', sans-serif; font-size: 22px; font-weight: 700; color: #1A3A6B; }
 .logo img { height: 45px; width: auto; }
