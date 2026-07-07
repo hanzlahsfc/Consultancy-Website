@@ -190,11 +190,17 @@ section { scroll-margin-top: 70px; }
   .hero-badge { font-size: 11px; padding: 4px 14px; }
 }
 @media (max-width: 480px) {
-  .hero { height: 300px; min-height: 300px; }
+  .hero { height: 300px; min-height: 300px; margin-top: 60px; }
   .hero h1 { font-size: 28px; }
   .hero-subtitle { font-size: 11px; letter-spacing: 2px; }
   .hero-services { font-size: 12px; }
-  .page-hero { height: 200px; }
+  .page-hero { height: 200px; margin-top: 60px; }
   .page-hero h1 { font-size: 26px; }
   .stats-row { grid-template-columns: 1fr; }
+  .section { scroll-margin-top: 60px; }
+  .logo { gap: 6px; }
+  .logo img { height: 30px; }
+  .logo span { font-size: 14px; }
+  .header-inner { height: 60px; }
+  .main-nav { top: 60px; }
 }
