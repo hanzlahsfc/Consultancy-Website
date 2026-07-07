@@ -40,6 +40,12 @@ python -m http.server 8000
 
 Then open `http://localhost:8000/` in your browser.
 
+## About Vortex Tech
+
+Vortex Tech is a premier Combined Airworthiness Organization (CAO) authorized under both EASA and UK CAA frameworks. We specialize in end-to-end Continuing Airworthiness Management (CAM) and Airworthiness Review Certificate (ARC) issuance for light aircraft, helicopters, gliders, balloons, and airships under EASA Part-ML rules.
+
+Our mission is to translate high-level aviation safety theory into profitable, audit-proof operational reality. Backed by professional membership in the German Aviation Research Society (GARS) and the European Association of Aviation Psychology (EAAP), we deliver high-utility consulting, fleet management, and human factors training across Europe.
+
 ## Color Reference
 
 | Color | Hex |
