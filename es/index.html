@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8"><link rel="icon" type="image/png" href="../images/favicon.png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vortex Tech � Organizaci�n de Aeronavegabilidad</title>
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+  <title>Vortex Tech — Organización de Aeronavegabilidad</title>
   <link rel="stylesheet" href="../style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,8 +17,8 @@
     @keyframes slideIn { from { opacity:0; transform:translateX(-40px); } to { opacity:1; transform:translateX(0); } }
     @keyframes pulse { 0%,100% { transform:scale(1); } 50% { transform:scale(1.05); } }
     .hero-home { position:relative; height:70vh; min-height:450px; display:flex; align-items:center; overflow:hidden; margin-top:70px; }
-    .hero-home .hero-bg { position:absolute; inset:0; background:url('../images/spanish-hero.png') center/cover no-repeat; }
-    .hero-home .hero-overlay { position:absolute; inset:0; background:linear-gradient(135deg, rgba(12,27,51,.85) 0%, rgba(12,27,51,.4) 50%, rgba(12,27,51,.2) 100%); }
+    .hero-home .hero-bg { position:absolute; inset:0; background:#fff url('../images/spanish-hero.png') center/cover no-repeat; }
+    .hero-home .hero-overlay { display:none; }
     .hero-home .hero-content { position:relative; z-index:2; max-width:800px; padding:0 20px; animation:fadeUp 1s ease-out; }
     .hero-home .badge { display:inline-block; font-family:'Montserrat',sans-serif; font-size:11px; font-weight:700; color:#54a8cc; background:rgba(84,168,204,.12); border:1px solid rgba(84,168,204,.3); padding:5px 16px; border-radius:20px; letter-spacing:2px; margin-bottom:18px; text-transform:uppercase; }
     .hero-home h1 { font-size:52px; font-weight:900; color:#fff; line-height:1.1; margin-bottom:12px; letter-spacing:-1px; }
@@ -35,8 +38,7 @@
       .hero-home h1 { font-size:28px; }
     }
     @media (max-width:768px) {
-      .stats-section-home { padding:20px 0!important; }
-      .stats-grid-home { grid-template-columns:repeat(2,1fr)!important; gap:20px!important; }
+      .stats-section-home { display:none!important; }
       .services-grid-home { grid-template-columns:1fr!important; }
       .fleet-spotlight-home { grid-template-columns:1fr!important; gap:30px!important; }
     }
